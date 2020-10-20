@@ -12,17 +12,17 @@ import cv2
 import os
 
 
-prototxtPath=os.path.sep.join([r'C:\Python37\Projects\face-mask-detector\face_detector','deploy.prototxt'])
-weightsPath=os.path.sep.join([r'C:\Python37\Projects\face-mask-detector\face_detector','res10_300x300_ssd_iter_140000.caffemodel'])
+prototxtPath=os.path.sep.join([r'E:\Mask-Detection-and-Recognition-using-Deep-Learning-Keras\FaceDetection_Classifier','deploy.prototxt'])
+weightsPath=os.path.sep.join([r'E:\Mask-Detection-and-Recognition-using-Deep-Learning-Keras\FaceDetection_Classifier','res10_300x300_ssd_iter_140000.caffemodel'])
 
 
 
 net=cv2.dnn.readNet(prototxtPath,weightsPath)
 
 
-model=load_model(r'C:\Python37\Projects\face-mask-detector\mobilenet_v2.model')
+model=load_model(r'E:\Mask-Detection-and-Recognition-using-Deep-Learning-Keras\Trained_model\mobilenet_v2.model')
 
-image=cv2.imread(r'C:\Python37\Projects\face-mask-detector\examples\example_03.png')
+image=cv2.imread(r'E:\Mask-Detection-and-Recognition-using-Deep-Learning-Keras\example_images\example_03.png')
 
 
 (h,w)=image.shape[:2]

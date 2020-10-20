@@ -56,14 +56,14 @@ def detect_and_predict_mask(frame,faceNet,maskNet):
 
 
 
-prototxtPath=os.path.sep.join([r'C:\Python37\Projects\face-mask-detector\face_detector','deploy.prototxt'])
-weightsPath=os.path.sep.join([r'C:\Python37\Projects\face-mask-detector\face_detector','res10_300x300_ssd_iter_140000.caffemodel'])
+prototxtPath=os.path.sep.join([r'E:\Mask-Detection-and-Recognition-using-Deep-Learning-Keras\FaceDetection_Classifier','deploy.prototxt'])
+weightsPath=os.path.sep.join([r'E:\Mask-Detection-and-Recognition-using-Deep-Learning-Keras\FaceDetection_Classifier','res10_300x300_ssd_iter_140000.caffemodel'])
 
 
 faceNet=cv2.dnn.readNet(prototxtPath,weightsPath)
 
 
-maskNet=load_model(r'C:\Python37\Projects\face-mask-detector\mobilenet_v2.model')
+maskNet=load_model(r'E:\Mask-Detection-and-Recognition-using-Deep-Learning-Keras\Trained_model\mobilenet_v2.model')
 
 
 vs=VideoStream(src=0).start()
