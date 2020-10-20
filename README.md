@@ -20,3 +20,7 @@ Our face mask detector is accurate, and since we used the MobileNetV2 architectu
 Pretrained Model Link:- https://drive.google.com/file/d/1BeR4ukiaS5ZU5Dq3TU9Yc51Ymo8zP_Vs/view?usp=sharing
 
 Dataset Link:- https://drive.google.com/folderview?id=1XDte2DL2Mf_hw4NsmGst7QtYoU7sMBVG
+
+## Acknowledgment
+
+https://www.youtube.com/watch?v=TNZAbVNTLhA&t=6172s
