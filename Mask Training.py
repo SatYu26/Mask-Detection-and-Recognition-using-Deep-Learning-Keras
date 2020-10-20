@@ -98,13 +98,13 @@ print(classification_report(test_Y.argmax(axis=1),predict,target_names=lb.classe
 
 # plot the training loss and accuracy
 
-N = EPOCHS
+N = Epochs
 plt.style.use("ggplot")
 plt.figure()
 plt.plot(np.arange(0, N), H.history["loss"], label="train_loss")
-plt.plot(np.arange(0, N), H.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, N), H.history["acc"], label="train_acc")
-plt.plot(np.arange(0, N), H.history["val_acc"], label="val_acc")
+plt.plot(np.arange(0, N), H.history["loss"], label="val_loss")
+plt.plot(np.arange(0, N), H.history["accuracy"], label="train_acc")
+plt.plot(np.arange(0, N), H.history["accuracy"], label="val_accuracy")
 plt.title("Training Loss and Accuracy")
 plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")
