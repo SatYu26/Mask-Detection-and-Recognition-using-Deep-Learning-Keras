@@ -7,9 +7,9 @@ I fine-tuned MobileNetV2 on our mask/no mask dataset and obtained a classifier t
 I then took this face mask classifier and applied it to both images and real-time video streams by:<br>
 
 <ul>
-Detecting faces in images/video<br>
-Extracting each individual face<br>
-Applying our face mask classifier<br>
+<li>Detecting faces in images/video</li>
+<li>Extracting each individual face</li>
+<li>Applying our face mask classifier</li>
 </ul>
 
 This face mask detector is accurate, and since I used the MobileNetV2 architecture, it’s also computationally efficient, making it easier to deploy the model to embedded systems (Raspberry Pi, Google Coral, Jetosn, Nano, etc.).<br>
